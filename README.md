@@ -8,20 +8,20 @@ Multi-expert ensemble models for long-tailed learning typically either learn div
 <img src="framework.png" weight=800>
 </p>
 
-## 1. Results
+## Results
 
-## 2. Requirements
+## Requirements
 * To install requirements: 
 ```
 pip install -r requirements.txt
 ```
 
-## 3. Datasets 
+## Datasets 
 * Please download datasets: ImageNet-LT, iNaturalist 2018, and Places-LT and put them to the corresponding "data_dir" in the config file.
 * CIFAR-100/CIFAR-10 will be downloaded automatically with the dataloader.
 
 
-## 4. Pretrained models
+## Pretrained models
 * For the training on Places-LT, we follow previous methods and use the [pre-trained ResNet-152 model](https://github.com/zhmiao/OpenLongTailRecognition-OLTR).
 * Please download the checkpoint. Unzip and move the checkpoint files to /model/pretrained_model_places/.
 
@@ -83,3 +83,18 @@ python3 train.py -c configs/config_places_lt_resnet152_lgla.json
 ``` 
 python test.py -r checkpoint_path
 ``` 
+
+## Citation
+If you find this repo useful for your research, please consider citing the paper
+```
+@inproceedings{tao2023local,
+  title={Local and Global Logit Adjustments for Long-Tailed Learning},
+  author={Tao, Yingfan and Sun, Jingna and Yang, Hao and Chen, Li and Wang, Xu and Yang, Wenming and Du, Daniel and Zheng, Min},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={11783--11792},
+  year={2023}
+}
+``` 
+
+## Acknowledgement
+The code is adopted from [SADE](https://github.com/Vanint/SADE-AgnosticLT/tree/main). We sincerely appreciate for their contributions.
