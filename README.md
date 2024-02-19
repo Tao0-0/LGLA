@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 
 ## 4. Pretrained models
-* For the training on Places-LT, we follow previous methods and use the pre-trained ResNet-152 model.
+* For the training on Places-LT, we follow previous methods and use the [pre-trained ResNet-152 model](https://github.com/zhmiao/OpenLongTailRecognition-OLTR).
 * Please download the checkpoint. Unzip and move the checkpoint files to /model/pretrained_model_places/.
 
 
